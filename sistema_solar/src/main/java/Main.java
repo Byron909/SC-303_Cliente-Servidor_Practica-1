@@ -9,6 +9,8 @@ public class Main {
         //Instanciar planetas
         Planeta mercurio = new PlanetasSistemaSolar("Mercurio", 4.879, 57.9, 0,5.43,3.70,false);
         Planeta venus = new PlanetasSistemaSolar("Venus", 12.104, 108.2, 0,5.24,8.87, false);
+        Planeta tierra = new PlanetaSistemaSolar("Tierra", 12.742, 149.6, 1, 5.51, 9.81, false);
+        Planeta marte = new PlanetaSistemaSolar( "Marte", 6.779, 227.9, 2, 3.93, 3.71, false);
         // Jupiter, Saturno, Neptuno y Urano
         Planeta jupiter = new PlanetasSistemaSolar("Jupiter", 69.911, 778.5,95, 1.33, 24.79, true);
         Planeta saturno = new PlanetasSistemaSolar("Saturno", 58.232, 1434, 146, 0.69, 10.44, true);
@@ -19,6 +21,8 @@ public class Main {
         List<Planeta> planetas = new ArrayList<>();
         planetas.add(mercurio);
         planetas.add(venus);
+        planetas.add(tierra);
+        planetas.add(marte);
         planetas.add(jupiter);
         planetas.add(saturno);
         planetas.add(neptuno);
