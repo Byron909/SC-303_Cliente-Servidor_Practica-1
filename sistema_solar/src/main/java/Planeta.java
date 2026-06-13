@@ -7,6 +7,9 @@ public interface Planeta {
     double getDistanciaSol();
 
     int getNumeroLunas();
+    double getDensidad();
+    double getGravedad();
+    boolean getTieneAnillos();
 
     String getTipo();
 
@@ -15,4 +18,7 @@ public interface Planeta {
     int compararPorTamano(Planeta otro);
 
     int compararPorDistancia(Planeta otro);
+    double compararPorGravedad(Planeta otro);
+    double compararPorDensidad(Planeta otro);
+    double calcularVelocidadOrbital();
 }
