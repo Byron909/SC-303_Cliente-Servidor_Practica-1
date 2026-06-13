@@ -5,7 +5,8 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-
+        
+        
         //Instanciar planetas
         Planeta mercurio = new PlanetasSistemaSolar("Mercurio", 4.879, 57.9, 0,5.43,3.70,false);
         Planeta venus = new PlanetasSistemaSolar("Venus", 12.104, 108.2, 0,5.24,8.87, false);
@@ -42,6 +43,26 @@ public class Main {
             System.out.println("Comparacion por Densidad: "+ planeta.compararPorDensidad(otroPlaneta));
             System.out.println("\n");
         }
+    //Agrupacion
+    System.out.println("\nPLANETAS ROCOSOS");
+    for (int i = 0; i < planetas.size(); i++) {
+
+    if (planetas.get(i).getTipo().equals("ROCOSO")) {
+
+        System.out.println(planetas.get(i).getNombre());
 
     }
+}
+    System.out.println("\nPLANETAS GASEOSOS");
+
+    for (int i = 0; i < planetas.size(); i++) {
+
+    if (planetas.get(i).getTipo().equals("GASEOSO")) {
+
+        System.out.println(planetas.get(i).getNombre());
+
+    }
+}
+    }
+  
 }
