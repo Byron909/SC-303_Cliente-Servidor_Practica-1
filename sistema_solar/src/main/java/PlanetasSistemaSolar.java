@@ -25,7 +25,10 @@ public class PlanetasSistemaSolar extends CuerpoCeleste implements Planeta {
 
     @Override
     public String getTipo() {
+        if (numeroLunas > 10){
         return "GASEOSO";
+        }
+         return "ROCOSO";
     }
 
     @Override
